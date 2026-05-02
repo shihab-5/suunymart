@@ -28,7 +28,7 @@ const Products = async() => {
      <h2 className='text-[18px]'>{item.name}</h2>
      <div className='flex justify-between'>
         <p>${item.price}</p>
-        <p className='flex gap-1.5 items-center'><FaStar></FaStar> Rating</p>
+        <p className='flex gap-1.5 items-center'>{item.rating}<FaStar></FaStar> Rating</p>
      </div>
      <Link href={'/details'}>
      <button className='btn btn-outline btn-warning block'>View Details</button>

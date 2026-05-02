@@ -32,17 +32,7 @@
     "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500",
     "category": "Skincare"
   },
-  {
-    "id": 4,
-    "name": "Men's Summer T-Shirt",
-    "brand": "CoolFit",
-    "price": 20,
-    "rating": 4.4,
-    "stock": 15,
-    "description": "Lightweight breathable t-shirt for casual summer wear.",
-    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500",
-    "category": "Clothing"
-  },
+  
   {
     "id": 5,
     "name": "Men's Floral Shirt",
@@ -51,7 +41,7 @@
     "rating": 4.8,
     "stock": 8,
     "description": "Stylish floral shirt perfect for summer parties.",
-    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500",
+    "image": "https://unsplash.com/photos/a-white-t-shirt-hanging-on-a-wall-next-to-a-plant-3fXs48dBpH4?w=500",
     "category": "Clothing"
   },
   {
@@ -164,17 +154,7 @@
     "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=500",
     "category": "Sports"
   },
-  {
-    "id": 16,
-    "name": "Summer Sandals",
-    "brand": "StepBreeze",
-    "price": 26,
-    "rating": 4.5,
-    "stock": 13,
-    "description": "Stylish sandals for summer comfort.",
-    "image": "https://images.unsplash.com/photo-1608256246200-53e8b47b2f80?w=500",
-    "category": "Footwear"
-  },
+ 
   {
     "id": 17,
     "name": "Fruit Juice Blender",

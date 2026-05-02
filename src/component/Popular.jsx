@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
+// import data from '../../public/data.json'
 
 const Popular = async() => {
     const res =await fetch('http://localhost:3000/data.json')
@@ -27,7 +28,7 @@ const Popular = async() => {
     <h2 className='text-[18px]'>{item.name}</h2>
     <div className='flex justify-between'>
        <p>${item.price}</p>
-       <p className='flex gap-1.5 items-center'><FaStar></FaStar> Rating</p>
+       <p className='flex gap-1.5 items-center'> {item.rating}<FaStar></FaStar> Rating</p>
     </div>
     <Link href={'/details'}>
     <button className='btn btn-outline btn-warning block w-full'>View Details</button>
