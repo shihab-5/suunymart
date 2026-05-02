@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-sky-50">
    <Image 
     src="/banner.png" 
     alt="Banner of the website" 

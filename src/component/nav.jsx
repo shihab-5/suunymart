@@ -64,7 +64,7 @@ import Navlink from './Navlink';
   </div>
   <div className="navbar-end flex gap-3">
     <button className="font-bold text-3xl"><FaUser /></button>
-    <Link href={'/login'} className='btn btn-neutral text-2xl font-bold'>Login</Link>
+    <Link href={'/login'} className='btn btn-neutral font-bold'>Login</Link>
   </div>
 </div>
         </div>
