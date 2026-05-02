@@ -5,7 +5,7 @@
 const Products = async() => {
 
  
-     const res =await fetch('http://localhost:3000/data.json')
+     const res =await fetch('http://localhost:3000/data.json',{cache :'no-store'})
      const products=await res.json()
      // console.log(name);
      
@@ -13,7 +13,7 @@ const Products = async() => {
          <div className='py-10 container mx-auto bg-sky-50 flex flex-col gap-16'>
              <p className='text-6xl font-bold text-center'>All Products</p>
  
-    <div className='flex flex-wrap gap-7 justify-around mb-9'>
+    <div className='flex flex-wrap gap-7 justify-around mb-9 mx-20'>
      {products.map((item) => (
    <div  className='p-5 rounded-2xl bg-base-100 flex flex-col gap-3 w-80' key={item.id}>
  
