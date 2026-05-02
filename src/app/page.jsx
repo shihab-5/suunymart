@@ -1,3 +1,4 @@
+import Popular from "@/component/Popular";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     height={300} 
     style={{ width: '100%', height:'85vh'}} 
 />
+<Popular></Popular>
 
   
     </div>
