@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "name": "Men's Classic Aviator Sunglasses",
+    "brand": "SunShade",
+    "price": 25,
+    "rating": 4.8,
+    "stock": 50,
+    "description": "Timeless aviator style with polarized lenses and a sleek metal frame.",
+    "image": "https://images.pexels.com/photos/1493086/pexels-photo-1493086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Men's Polarized Wayfarer Sunglasses",
+    "brand": "Ocean View",
+    "price": 35,
+    "rating": 4.9,
+    "stock": 40,
+    "description": "Iconic wayfarer design with polarized lenses to reduce glare.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "category": "Accessories"
+  },
+  {
+    "id": 3,
+    "name": "Men's Sport Wrap Sunglasses",
+    "brand": "Active Edge",
+    "price": 45,
+    "rating": 4.7,
+    "stock": 30,
+    "description": "Wraparound style for maximum protection during outdoor activities.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 4,
+    "name": "Men's Clubmaster Sunglasses",
+    "brand": "Retro Cool",
+    "price": 30,
+    "rating": 4.6,
+    "stock": 45,
+    "description": "Classic clubmaster style with a vintage vibe and metal details.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Men's Round Lens Sunglasses",
+    "brand": "Boho Chic",
+    "price": 28,
+    "rating": 4.5,
+    "stock": 35,
+    "description": "Trendy round sunglasses with a bohemian touch and thin metal frame.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 6,
+    "name": "Men's Oversized Square Sunglasses",
+    "brand": "Glam Guard",
+    "price": 40,
+    "rating": 4.8,
+    "stock": 25,
+    "description": "Large square lenses for a bold statement and full coverage.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 7,
+    "name": "Men's Flat Top Sunglasses",
+    "brand": "Modern Edge",
+    "price": 32,
+    "rating": 4.6,
+    "stock": 40,
+    "description": "Sleek flat top design with a minimalist frame for a modern look.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 8,
+    "name": "Men's Keyhole Bridge Sunglasses",
+    "brand": "Classic Appeal",
+    "price": 29,
+    "rating": 4.7,
+    "stock": 38,
+    "description": "Vintage-inspired style with a unique keyhole bridge detail.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 9,
+    "name": "Men's Wood Frame Sunglasses",
+    "brand": "Eco Vibe",
+    "price": 55,
+    "rating": 4.9,
+    "stock": 20,
+    "description": "Sustainable and stylish wood frame sunglasses with polarized lenses.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 10,
+    "name": "Men's Mirrored Lens Sunglasses",
+    "brand": "Reflective Style",
+    "price": 38,
+    "rating": 4.8,
+    "stock": 30,
+    "description": "Trendy mirrored lenses that add a cool factor to any summer outfit.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 11,
+    "name": "Men's Metal Accent Sunglasses",
+    "brand": "Sleek Designs",
+    "price": 35,
+    "rating": 4.7,
+    "stock": 42,
+    "description": "Modern shades with metallic accents for a touch of sophistication.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 12,
+    "name": "Men's Two-Tone Sunglasses",
+    "brand": "Color Play",
+    "price": 30,
+    "rating": 4.6,
+    "stock": 35,
+    "description": "Stylish sunglasses featuring two contrasting colors on the frame.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 13,
+    "name": "Men's Matte Finish Sunglasses",
+    "brand": "Matte Cool",
+    "price": 27,
+    "rating": 4.5,
+    "stock": 48,
+    "description": "Matte finish frames that offer a contemporary and textured look.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 14,
+    "name": "Men's Rimless Sunglasses",
+    "brand": "Lightweight View",
+    "price": 42,
+    "rating": 4.8,
+    "stock": 28,
+    "description": "Ultra-lightweight rimless design for minimal distraction and comfort.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 15,
+    "name": "Men's Folding Sunglasses",
+    "brand": "Travel Companion",
+    "price": 39,
+    "rating": 4.7,
+    "stock": 33,
+    "description": "Compact and portable folding sunglasses, perfect for on-the-go storage.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 16,
+    "name": "Men's Goggle Style Sunglasses",
+    "brand": "Retro Sport",
+    "price": 48,
+    "rating": 4.9,
+    "stock": 22,
+    "description": "Unique goggle-inspired design that merges sports and fashion trends.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 17,
+    "name": "Men's Double Bridge Sunglasses",
+    "brand": "Structure Style",
+    "price": 36,
+    "rating": 4.7,
+    "stock": 39,
+    "description": "Sleek sunglasses with a fashionable double bridge metal structure.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 18,
+    "name": "Men's Transparent Frame Sunglasses",
+    "brand": "Clear View",
+    "price": 33,
+    "rating": 4.6,
+    "stock": 44,
+    "description": "Trendy transparent frames that add a clean and light aesthetic.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 19,
+    "name": "Men's Gradient Lens Sunglasses",
+    "brand": "Fade To Cool",
+    "price": 31,
+    "rating": 4.5,
+    "stock": 47,
+    "description": "Sunglasses featuring gradient lenses that blend colors seamlessly.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  },
+  {
+    "id": 20,
+    "name": "Men's Carbon Fiber Sunglasses",
+    "brand": "Tough Guard",
+    "price": 60,
+    "rating": 4.9,
+    "stock": 18,
+    "description": "Highly durable and lightweight carbon fiber frames with polarized lenses.",
+    "image": "https://images.pexels.com/photos/1761661/pexels-photo-1761661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "category": "Accessories"
+  }
+]
