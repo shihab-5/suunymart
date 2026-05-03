@@ -1,11 +1,17 @@
+'use client'
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaUser } from "react-icons/fa";
 import Navlink from './Navlink';
+  import { authClient } from "@/lib/auth-client"
 
 
  const Nav = () => {
+
+const { data: session } = authClient.useSession()
+ const user=session?.user
+console.log(user)
     const nav=[
         {
             path:'/',
