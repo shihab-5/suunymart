@@ -24,6 +24,9 @@ const Login= () => {
     rememberMe: true,
     callbackURL: "/",
 });
+if(error){
+    alert('not correct')
+}
 console.log(res,error)
     }
     return (

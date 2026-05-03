@@ -1,10 +1,12 @@
 'use client'
 import { authClient } from '@/lib/auth-client';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const Register = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -26,7 +28,10 @@ const Register = () => {
         })
         console.log(res,error)
         if(error){
-            alert('already exist')
+            alert(error.message || 'Registration failed')
+        } else {
+            alert('Registration successful! Redirecting to login...')
+            router.push('/')
         }
     }
     return (
@@ -38,17 +43,25 @@ const Register = () => {
 
   <label className="label">Name</label>
   <input type="text"  className="input" placeholder="Name"
-  {...register("name")} />
+  {...register("name", { required: "name field is required" })} />
+  {
+     errors.name && (
+     <p className='text-red-600'>{errors.name.message}</p>)
+  }
 
   <label className="label">Email</label>
   <input type="email"  className="input" placeholder="Email"
-  {...register("email")} />
+  {...register("email", { required: "email field is required" })} />
+  {
+     errors.email && (
+     <p className='text-red-600'>{errors.email.message}</p>)
+  }
 
   <label className="label">Image</label>
   <input type="url"  className="input" placeholder="image url" 
     {...register("image", { required: "url field is required" })} />
     {
-       errors.password && (
+       errors.image && (
        <p className='text-red-600'>{errors.image.message}</p>)
     }
 
@@ -60,8 +73,7 @@ const Register = () => {
        <p className='text-red-600'>{errors.password.message}</p>)
     }
 
-    <Link href={'/login'}>  <button className="btn btn-neutral mt-4">Register</button>
-</Link>
+    <button type="submit" className="btn btn-neutral mt-4 w-full">Register</button>
 </fieldset>
     </form>
         </div>

@@ -2,14 +2,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FaUser } from "react-icons/fa";
 import Navlink from './Navlink';
   import { authClient } from "@/lib/auth-client"
 
 
  const Nav = () => {
 
-const { data: session } = authClient.useSession()
+const { data: session,isPending } = authClient.useSession()
  const user=session?.user
 console.log(user)
     const nav=[
@@ -68,10 +67,24 @@ console.log(user)
      }
     </ul>
   </div>
-  <div className="navbar-end flex gap-3">
-    <button className="font-bold text-3xl"><FaUser /></button>
-    <Link href={'/login'} className='btn btn-neutral font-bold'>Login</Link>
-  </div>
+  { isPending?(<span className="loading loading-spinner text-info"></span>
+)
+  : user ? (<div className="navbar-end flex gap-3">
+    <h1>hello, {user.name}</h1>
+    <Image 
+    src={user.image}
+    alt="logo of the website" 
+    width={55} height={55}
+    />
+    {/* <button className="font-bold text-3xl"><FaUser /></button> */}
+    <button
+className='btn btn-neutral font-bold' onClick={async()=> await authClient.signOut()}>Logout
+  </button>
+  </div>)
+  :(    <Link href={'/login'} className='btn btn-neutral font-bold ml-80'>Login</Link>
+)
+  }
+
 </div>
         </div>
     );
