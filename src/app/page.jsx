@@ -1,4 +1,6 @@
 import Popular from "@/component/Popular";
+import Tips from "@/component/Tips";
+import TopBrands from "@/component/Top-brands";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,7 +14,8 @@ export default function Home() {
     style={{ width: '100%', height:'85vh'}} 
 />
 <Popular></Popular>
-
+<Tips></Tips>
+<TopBrands></TopBrands>
   
     </div>
   );

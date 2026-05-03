@@ -30,8 +30,8 @@ const Products = async() => {
         <p>${item.price}</p>
         <p className='flex gap-1.5 items-center'>{item.rating}<FaStar></FaStar> Rating</p>
      </div>
-     <Link href={'/details'}>
-     <button className='btn btn-outline btn-warning block'>View Details</button>
+     <Link href={`/products/${item.id}`}>
+     <button className='btn btn-outline btn-warning block w-full'>View Details</button>
      </Link>
    </div>
  ))}

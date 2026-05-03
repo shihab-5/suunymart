@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
+import 'animate.css';
 // import data from '../../public/data.json'
 
 const Popular = async() => {
@@ -11,7 +12,7 @@ const Popular = async() => {
     const popularProducts = product.slice(0, 3);
     return (
         <div className='my-20 container mx-auto bg-sky-50 flex flex-col gap-16'>
-            <p className='text-6xl font-bold text-center'>Popular Products</p>
+            <p className='text-6xl font-bold text-center animate__animated animate__wobble'>Popular Products</p>
 
    <div className='flex justify-around mb-9'>
     {popularProducts.map((item) => (
@@ -30,7 +31,7 @@ const Popular = async() => {
        <p>${item.price}</p>
        <p className='flex gap-1.5 items-center'> {item.rating}<FaStar></FaStar> Rating</p>
     </div>
-    <Link href={'/details'}>
+    <Link href={`/products/${item.id}`}>
     <button className='btn btn-outline btn-warning block w-full'>View Details</button>
     </Link>
   </div>
