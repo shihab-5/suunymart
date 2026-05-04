@@ -11,7 +11,7 @@ export default function Home() {
     alt="Banner of the website" 
     width={400}
     height={300} 
-    style={{ width: '100%', height:'85vh'}} 
+    style={{ width: '100%', height: 'auto', minHeight: '50vh', maxHeight: '85vh'}} 
 />
 <Popular></Popular>
 <Tips></Tips>

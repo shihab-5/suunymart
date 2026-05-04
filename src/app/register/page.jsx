@@ -36,46 +36,58 @@ const Register = () => {
     }
     return (
 
-        <div className='mx-auto bg-sky-100 flex flex-col items-center my-10 w-fit px-5 rounded-2xl'>
+        <div className='min-h-screen flex flex-col items-center justify-center px-4 py-6 sm:py-10 bg-gradient-to-br from-sky-100 to-sky-50'>
+    <div className='w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden'>
     <form action="" onSubmit={handleSubmit(handle)}>
-        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-  <legend className="fieldset-legend font-bold">Register</legend>
+        <fieldset className="fieldset bg-white border-0 rounded-0 w-full border-0 p-4 sm:p-6 md:p-8">
+  <legend className="fieldset-legend font-bold text-xl sm:text-2xl text-center mb-6">Register</legend>
 
-  <label className="label">Name</label>
-  <input type="text"  className="input" placeholder="Name"
+  <div className="space-y-4">
+  <div>
+  <label className="label text-sm sm:text-base">Name</label>
+  <input type="text"  className="input input-bordered w-full text-sm sm:text-base" placeholder="Your Name"
   {...register("name", { required: "name field is required" })} />
-  {
-     errors.name && (
-     <p className='text-red-600'>{errors.name.message}</p>)
+  {errors.name && (
+     <p className='text-error text-xs sm:text-sm mt-1'>{errors.name.message}</p>)
   }
+  </div>
 
-  <label className="label">Email</label>
-  <input type="email"  className="input" placeholder="Email"
+  <div>
+  <label className="label text-sm sm:text-base">Email</label>
+  <input type="email"  className="input input-bordered w-full text-sm sm:text-base" placeholder="your@email.com"
   {...register("email", { required: "email field is required" })} />
-  {
-     errors.email && (
-     <p className='text-red-600'>{errors.email.message}</p>)
+  {errors.email && (
+     <p className='text-error text-xs sm:text-sm mt-1'>{errors.email.message}</p>)
   }
+  </div>
 
-  <label className="label">Image</label>
-  <input type="url"  className="input" placeholder="image url" 
+  <div>
+  <label className="label text-sm sm:text-base">Image URL</label>
+  <input type="url"  className="input input-bordered w-full text-sm sm:text-base" placeholder="https://..." 
     {...register("image", { required: "url field is required" })} />
-    {
-       errors.image && (
-       <p className='text-red-600'>{errors.image.message}</p>)
+    {errors.image && (
+       <p className='text-error text-xs sm:text-sm mt-1'>{errors.image.message}</p>)
     }
+  </div>
 
-  <label className="label">Password</label>
-  <input type="password"  className="input" placeholder="Password" 
+  <div>
+  <label className="label text-sm sm:text-base">Password</label>
+  <input type="password"  className="input input-bordered w-full text-sm sm:text-base" placeholder="••••••••" 
     {...register("password", { required: "password field is required" })} />
-    {
-       errors.password && (
-       <p className='text-red-600'>{errors.password.message}</p>)
+    {errors.password && (
+       <p className='text-error text-xs sm:text-sm mt-1'>{errors.password.message}</p>)
     }
+  </div>
+  </div>
 
-    <button type="submit" className="btn btn-neutral mt-4 w-full">Register</button>
+    <button type="submit" className="btn btn-neutral w-full mt-6 text-sm sm:text-base">Register</button>
 </fieldset>
     </form>
+    
+    <div className="px-4 sm:px-6 md:px-8 py-4 text-center border-t">
+    <p className="text-xs sm:text-sm">Already have an account?<Link href={'/login'} className='text-blue-600 font-semibold hover:underline ml-2'> Login</Link></p>
+    </div>
+    </div>
         </div>
     );
 };
