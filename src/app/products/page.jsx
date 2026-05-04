@@ -1,6 +1,5 @@
 //  'use client'
  import { auth } from '@/lib/auth';
-import { authClient } from '@/lib/auth-client';
 import { headers } from 'next/headers';
 import Image from 'next/image';
  import Link from 'next/link';
