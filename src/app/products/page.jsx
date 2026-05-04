@@ -5,7 +5,7 @@
 const Products = async() => {
 
  
-     const res =await fetch('http://localhost:3000/data.json',{cache :'no-store'})
+     const res =await fetch('https://suunymart-git-main-shihab-5s-projects.vercel.app',{cache :'no-store'})
      const products=await res.json()
      // console.log(name);
      

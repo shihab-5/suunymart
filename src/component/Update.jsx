@@ -39,7 +39,7 @@ const Update = () => {
   </fieldset>
 
   <label className="fieldset">
-    <span className="label">Password</span>
+    <span className="label">Image url</span>
     <input type="url" className="input validator" placeholder="url" name='image' required />
     <span className="validator-hint hidden">Required</span>
   </label>
