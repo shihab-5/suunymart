@@ -1,4 +1,8 @@
- import Image from 'next/image';
+//  'use client'
+ import { auth } from '@/lib/auth';
+import { authClient } from '@/lib/auth-client';
+import { headers } from 'next/headers';
+import Image from 'next/image';
  import Link from 'next/link';
  import React from 'react';
  import { FaStar } from 'react-icons/fa';
@@ -8,6 +12,10 @@ const Products = async() => {
      const res =await fetch('https://suunymart-orpin.vercel.app/data.json',{cache :'no-store'})
      const products=await res.json()
      // console.log(name);
+
+    const session = await auth.api.getSession({
+           headers: await headers()
+       })
      
      return (
          <div className='py-6 sm:py-10 px-4 sm:px-6 md:px-8 bg-sky-50 flex flex-col gap-8 sm:gap-12 md:gap-16'>
@@ -30,9 +38,19 @@ const Products = async() => {
         <p className='font-bold'>${item.price}</p>
         <p className='flex gap-1 sm:gap-1.5 items-center text-xs sm:text-sm'>{item.rating}<FaStar></FaStar> Rating</p>
      </div>
-     <Link href={`/products/${item.id}`}>
+       { 
+    //    isPending?(<span className="loading loading-spinner text-info"></span>)
+   session ?(
+      <Link href={`/products/${item.id}`}>
      <button className='btn btn-outline btn-warning btn-sm sm:btn-md block w-full'>View Details</button>
-     </Link>
+     </Link> 
+  ):(
+    <Link href={`/login`}>
+     <button className='btn btn-outline btn-warning btn-sm sm:btn-md block w-full'>View Details</button>
+     </Link> 
+  )
+}
+  
    </div>
  ))}
     </div>

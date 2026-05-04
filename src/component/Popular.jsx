@@ -3,11 +3,17 @@ import Link from 'next/link';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import 'animate.css';
+import { auth } from '@/lib/auth';
+import { headers } from 'next/headers';
 // import data from '../../public/data.json'
 
 const Popular = async() => {
     const res =await fetch('https://suunymart-orpin.vercel.app/data.json',{cache :'no-store'})
     const product=await res.json()
+
+      const session = await auth.api.getSession({
+               headers: await headers()
+           })
     // console.log(name);
     const popularProducts = product.slice(0, 3);
     return (
@@ -31,9 +37,18 @@ const Popular = async() => {
        <p className='font-bold'>${item.price}</p>
        <p className='flex gap-1 sm:gap-1.5 items-center text-xs sm:text-sm'> {item.rating}<FaStar></FaStar> Rating</p>
     </div>
-    <Link href={`/products/${item.id}`}>
-    <button className='btn btn-outline btn-warning btn-sm sm:btn-md block w-full'>View Details</button>
-    </Link>
+           { 
+    //    isPending?(<span className="loading loading-spinner text-info"></span>)
+   session ?(
+      <Link href={`/products/${item.id}`}>
+     <button className='btn btn-outline btn-warning btn-sm sm:btn-md block w-full'>View Details</button>
+     </Link> 
+  ):(
+    <Link href={`/login`}>
+     <button className='btn btn-outline btn-warning btn-sm sm:btn-md block w-full'>View Details</button>
+     </Link> 
+  )
+}
   </div>
 ))}
    </div>
