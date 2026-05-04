@@ -21,5 +21,5 @@ else{
 // export default function proxy(request) { ... }
  
 export const config = {
-  matcher: ['/profile',"/src/app/products/:path*"],
+  matcher: ['/profile',"/products/:path*"],
 }
