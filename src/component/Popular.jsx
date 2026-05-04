@@ -6,7 +6,7 @@ import 'animate.css';
 // import data from '../../public/data.json'
 
 const Popular = async() => {
-    const res =await fetch('http://localhost:3000/data.json',{cache :'no-store'})
+    const res =await fetch('https://suunymart-orpin.vercel.app/json.data',{cache :'no-store'})
     const product=await res.json()
     // console.log(name);
     const popularProducts = product.slice(0, 3);
