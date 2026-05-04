@@ -5,7 +5,7 @@ import { FaStar } from 'react-icons/fa';
 const Details = async({params}) => {
     const {id} = await params;
 
-    const res = await fetch('http://localhost:3000/data.json', {cache: 'no-store'});
+    const res = await fetch('https://suunymart-orpin.vercel.app/data.json', {cache: 'no-store'});
     const products = await res.json();
     const product = products.find(p => p.id === parseInt(id));
     
